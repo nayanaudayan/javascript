@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+Array.prototype.count = function(item){ 
+            let appearance = 0; //This is the default value
+            this.forEach(index=>{
+                if (index === item)
+                    appearance++
+            });
+            return appearance;
+}
+numbers = [1,2,3,4,5,2,3,4,2,4,2]
+alert("In this array the number appears in\n" +numbers.count(2)+" times")
+    </script>
+</body>
+</html>
